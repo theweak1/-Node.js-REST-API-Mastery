@@ -7,7 +7,7 @@
   "keywords": [],
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "dotenv -- nodemon",
     "test": "jest",
     "test:watch": "jest --watch",
     "lint": "eslint",
@@ -24,6 +24,7 @@
     "@tsconfig/node22": "^22.0.2",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.15.29",
+    "dotenv-cli": "^8.0.0",
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-format": "^1.0.1",

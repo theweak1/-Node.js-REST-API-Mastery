@@ -4,6 +4,8 @@ import cors from "cors";
 import express from "express";
 import morgan from "morgan";
 
+import config from "./config";
+
 export function createServer() {
   const app = express();
   app
@@ -14,7 +16,7 @@ export function createServer() {
     .use(cors());
 
   app.get("/health", (req: Request, res: Response) => {
-    res.json({ ok: true });
+    res.json({ ok: true, environment: config.env });
   });
 
   return app;

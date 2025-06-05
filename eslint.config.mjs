@@ -1,4 +1,5 @@
 import antfu from "@antfu/eslint-config";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
 export default antfu(
   {
@@ -19,7 +20,6 @@ export default antfu(
       "no-console": ["warn"],
       "antfu/no-top-level-await": ["off"],
       "node/prefer-global/process": ["off"],
-      "node/no-process-env": ["error"],
       "perfectionist/sort-imports": [
         "error",
         {
@@ -33,6 +33,13 @@ export default antfu(
           ignore: ["README.md"],
         },
       ],
+      "prettier/prettier": [
+        "error",
+        {
+          endOfLine: "auto",
+        },
+      ],
     },
   },
+  eslintPluginPrettierRecommended, // <-- ensures Prettier runs with ESLint
 );
