@@ -5,19 +5,21 @@ import express from "express";
 import morgan from "morgan";
 
 import config from "./config";
+import v1 from "./routes/v1";
 
 export function createServer() {
-  const app = express();
-  app
-    .disable("x-powered-by")
-    .use(morgan("dev"))
-    .use(express.urlencoded({ extended: true }))
-    .use(express.json())
-    .use(cors());
+	const app = express();
+	app
+		.disable("x-powered-by")
+		.use(morgan("dev"))
+		.use(express.urlencoded({ extended: true }))
+		.use(express.json())
+		.use(cors());
 
-  app.get("/health", (req: Request, res: Response) => {
-    res.json({ ok: true, environment: config.env });
-  });
+	app.get("/health", (req: Request, res: Response) => {
+		res.json({ ok: true, environment: config.env });
+	});
 
-  return app;
+	app.use("/v1", v1);
+	return app;
 }
