@@ -5,6 +5,7 @@ import express from "express";
 import morgan from "morgan";
 
 import config from "./config";
+import errorHandler from "./middleware/error-handler";
 import v1 from "./routes/v1";
 
 export function createServer() {
@@ -21,5 +22,8 @@ export function createServer() {
 	});
 
 	app.use("/v1", v1);
+
+	app.use(errorHandler);
+
 	return app;
 }
