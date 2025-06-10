@@ -5,7 +5,7 @@
 		"outDir": "./dist",
 		"forceConsistentCasingInFileNames": true
 	},
-	"include": ["src/**/*"],
+	"include": ["src/**/*", "utils.ts"],
 	"exclude": ["node_modules", "dist"],
 	"ts-node": { "files": true }
 }
