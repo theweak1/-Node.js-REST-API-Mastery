@@ -3,7 +3,11 @@ import type { Router } from "express";
 import express from "express";
 
 import authenticateUser from "../../../middleware/authenticate-user";
-import { getProject, listProjects, listProjectTasks } from "./controller";
+import {
+	getProject,
+	listProjects,
+	listProjectTasks,
+} from "./projects.controller";
 
 const projects: Router = express.Router();
 

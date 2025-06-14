@@ -2,8 +2,8 @@ import type { Router } from "express";
 
 import express from "express";
 
-import projects from "./projects";
-import tasks from "./tasks";
+import projects from "./projects/projects.index";
+import tasks from "./tasks/tasks.index";
 
 const v1: Router = express.Router();
 

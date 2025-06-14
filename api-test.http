@@ -1,18 +1,17 @@
 ### Health check
-
-GET http://localhost:3000/health HTTP/1.1
+GET http://localhost:4000/health HTTP/1.1
 
 ### GET tasks
-GET http://localhost:3000/v1/tasks HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlODNkMTUzZC03NzI0LTQzMzMtODA4OC01MWVjNzA3NDM5MDkiLCJpYXQiOjE3NDk2NzcyMjIsImV4cCI6MTc0OTY4MDgyMiwiaXNzIjoidGFzay1tYW5hZ2VyLWFwcCJ9._34TtGpyg7M4BzU7PaMvmF2Bnd7rRiylh1gM7ZsSCxk
+GET http://localhost:4000/v1/tasks HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlODNkMTUzZC03NzI0LTQzMzMtODA4OC01MWVjNzA3NDM5MDkiLCJpYXQiOjE3NDk4NzY4NjIsImV4cCI6MTc0OTg4MDQ2MiwiaXNzIjoidGFzay1tYW5hZ2VyLWFwcCJ9._pnnDlNgYWAHM0aNiAe_f-QJrOrzVG-QCcT64tB5H9U
 ### GET task by ID
-GET http://localhost:3000/v1/tasks/cmbsc5ju30004navg231kzvp2 HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlODNkMTUzZC03NzI0LTQzMzMtODA4OC01MWVjNzA3NDM5MDkiLCJpYXQiOjE3NDk2NzcyMjIsImV4cCI6MTc0OTY4MDgyMiwiaXNzIjoidGFzay1tYW5hZ2VyLWFwcCJ9._34TtGpyg7M4BzU7PaMvmF2Bnd7rRiylh1gM7ZsSCxk
+GET http://localhost:4000/v1/tasks/cmbsc5ju30004navg231kzvp2 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlODNkMTUzZC03NzI0LTQzMzMtODA4OC01MWVjNzA3NDM5MDkiLCJpYXQiOjE3NDk4NzY4NjIsImV4cCI6MTc0OTg4MDQ2MiwiaXNzIjoidGFzay1tYW5hZ2VyLWFwcCJ9._pnnDlNgYWAHM0aNiAe_f-QJrOrzVG-QCcT64tB5H9U
 ### GET projects
-GET http://localhost:3000/v1/projects HTTP/1.1
+GET http://localhost:4000/v1/projects HTTP/1.1
 
 ### GET projects by ID
-GET http://localhost:3000/v1/projects/1 HTTP/1.1
+GET http://localhost:4000/v1/projects/1 HTTP/1.1
 
 ### Get project's tasks
-GET http://localhost:3000/v1/projects/1/tasks HTTP/1.1
+GET http://localhost:4000/v1/projects/1/tasks HTTP/1.1

@@ -3,7 +3,7 @@ import type { Router } from "express";
 import express from "express";
 
 import authenticateUser from "../../../middleware/authenticate-user";
-import { getTask, listTasks } from "./controller";
+import { getTask, listTasks } from "./tasks.controller";
 
 const tasks: Router = express.Router();
 
